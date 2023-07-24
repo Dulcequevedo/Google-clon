@@ -1,0 +1,228 @@
+body{
+    /* Margen predeterminado */
+    margin: 0%;
+    /* Margen pa´dentro */
+    padding: 0%;
+    /* Tamaño de texto */
+    font-size: 16px;
+    /* Fuente de texto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #facde5;
+}
+/*******************************************************
+/*******************************************************
+/*******************************************************
+/* Navegación */
+
+header{
+    /* width - ancho /// height - alto */
+    background-color: #facde5;
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    /* como se puede mover el elemento */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    /* Eliminar viñetas */
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Altura automática */
+    height: auto;
+}
+
+nav .nav-right-section a{
+    /* color de texto */
+    color: #ff66c7;
+    /* linea debajo de texto */
+    text-decoration: none;
+    /* margen derecho */
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menú{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    /* Contiene a la imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /* Margin left - margen a la izquierda SOLAMENTE */
+    margin-left: 20px;
+    /* Redondear */
+    border-radius: 100px;
+    /* width - anchura */
+    width: 35px;
+}
+
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Main */
+
+main{
+    text-align: center;
+    margin-top: 150px;
+}
+
+main .main-logo{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+/*logo Google*/
+main .main-logo img{
+    height: 140px;
+}
+
+/* sección input */
+main .main-input{
+    /* width - anchura */
+    width: 550px;
+    /* margenes y centrado */
+    margin: 0 auto;
+    /* separar input de botones */
+    margin-bottom: 40px;
+}
+
+/* cajita gris redondeada buscador */
+main .main-input-container{
+    /* ancho de linea, estilo y color */
+    border: 2px solid #ff66c7;
+    /* bordes redondeados */
+    border-radius: 30px;
+    width: 525px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+    /* quitar borde negro */
+    border: none;
+    /* quitar borde azul al hacer clic */
+    outline: none;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url(/images/microfono\ google.png);
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    padding-left: 1%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(/images/camara\ google.png);
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-buttons{
+    /* vertical / horizontal */
+    width: 550px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    /* alinear elementos en la misma linea */
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 35px;
+    background-color: #de81bc;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 0 15px;
+}
+/*nos permite agregar diseño al poner el cursor sobre el elemento */
+main .main-input-container:hover{
+    box-shadow: 0 2px 6px 0 #ff66c7;
+}
+
+main .main-buttons button:hover{
+    color: #ffffff;
+    border: 1px solid #e34cab;
+    box-shadow: 0 4px 6px 0 #e882c3;
+}
+
+/* Footer */
+
+footer .mex{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 1px solid #eab9d8;
+    color: #e34cab;
+    margin-left: 45px;
+    font-size: 18px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #eab9d8;
+    border-top: 1px solid #e882c3;
+    text-decoration: none;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    margin: 12px;
+    padding-left: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+    margin-left: 36px;
+}
+
+footer .footer-right{
+    justify-self: right;
+    margin-left: 36px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    margin: 12px;
+    color: #e34cab;
+    font-size: 18px;
+}
